@@ -2,6 +2,7 @@
     "1" : {
         "form_id" : "new",
         "form_name" : "Create Security Policy",
+        "org_name" : "",
         "form_fields" : {
             "1" : {
                 "field_id" : 1,

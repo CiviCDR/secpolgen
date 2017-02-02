@@ -1,12 +1,13 @@
 <h2>{{ form.form_name }}</h2>
 
 <div ng-show="!form.submitted">
-    <div class="field row">
-        <div class="span2">Form ID:</div>
-        <div class="span4">{{ form.form_id }}</div>
-    </div>
     <form name="myForm" id="myForm">
-      <accordion close-others="accordion.oneAtATime">TEST
+      <accordion close-others="accordion.oneAtATime">
+          <accordion-group heading="Organisation">
+            Organisation name:
+            <input type="text" ng-model="form.org_name"></input>
+            <span ng-bind="form.org_name"></span>
+          </accordion-group>
           <accordion-group heading="{{field.field_title}}" ng-repeat="field in form.form_fields">
               <div class="accordion-edit">
                 <field-directive field="field">
