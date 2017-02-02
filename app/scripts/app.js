@@ -1,6 +1,6 @@
 'use strict';
 
-var angularApp = angular.module('secPolGen', ['ui.bootstrap', '$strap.directives']);
+var angularApp = angular.module('secPolGen', ['ui.bootstrap', '$strap.directives', "xeditable"]);
 
 angularApp.config(function ($routeProvider) {
 
@@ -21,4 +21,4 @@ angularApp.config(function ($routeProvider) {
             redirectTo: '/'
         });
 
-}).run(['$rootScope',  function() {}]);
+}).run(['$rootScope',  function(editableOptions) {  editableOptions.theme = 'bs3';}]);

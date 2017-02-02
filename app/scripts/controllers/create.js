@@ -5,6 +5,7 @@ angularApp.controller('CreateCtrl', function ($scope, $dialog, FormService, $rou
 
   FormService.form($routeParams.id).then(function(form) {
       $scope.form = form;
+      $scope.org_name = form.org_name;
   });
 
     // preview form mode

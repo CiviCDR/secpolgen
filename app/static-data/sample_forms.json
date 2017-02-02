@@ -6,8 +6,8 @@
         "form_fields" : {
             "1" : {
                 "field_id" : 1,
-                "field_title" : "Organisation name",
-                "field_type" : "textfield",
+                "field_title" : "Intro",
+                "field_type" : "intro",
                 "field_value" : "",
                 "field_required" : true
             },

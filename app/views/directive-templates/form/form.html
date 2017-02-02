@@ -3,17 +3,14 @@
 <div ng-show="!form.submitted">
     <form name="myForm" id="myForm">
       <accordion close-others="accordion.oneAtATime">
-          <accordion-group heading="Organisation">
-            Organisation name:
-            <input type="text" ng-model="form.org_name"></input>
-            <span ng-bind="form.org_name"></span>
-          </accordion-group>
+        <hr>
+        Organisation name:
+        <input type="text" ng-model="form.org_name"></input>
+        <hr>
           <accordion-group heading="{{field.field_title}}" ng-repeat="field in form.form_fields">
               <div class="accordion-edit">
                 <field-directive field="field">
-
                 </field-directive>
-
               </div>
           </accordion-group>
       </accordion>
