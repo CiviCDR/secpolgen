@@ -5,12 +5,13 @@
       <accordion close-others="accordion.oneAtATime">
         <hr>
         Organisation name:
-        <input type="text" ng-model="form.org_name"></input>
+        <input type="text" ng-model="org_name"></input>
         <hr>
-          <accordion-group heading="{{field.field_title}}" ng-repeat="field in form.form_fields">
+          <accordion-group heading="{{field.field_title}}" ng-repeat="field in form.form_fields" is-open="isopen" ng-click="isopen=!isopen">
               <div class="accordion-edit">
                 <field-directive field="field">
                 </field-directive>
+                <button class="btn btn-primary right" type="button" ng-click="nextPanel()">OK</button>
               </div>
           </accordion-group>
       </accordion>

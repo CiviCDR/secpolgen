@@ -13,8 +13,8 @@
             },
             "2" : {
                 "field_id" : 2,
-                "field_title" : "Last Name",
-                "field_type" : "textfield",
+                "field_title" : "Context",
+                "field_type" : "context",
                 "field_value" : "",
                 "field_required" : true
             },
@@ -100,13 +100,6 @@
                 "field_type" : "checkbox",
                 "field_value" : "0",
                 "field_required" : true
-            },
-            "10" : {
-                "field_id" : 10,
-                "field_title" : "I have a secret.",
-                "field_type" : "hidden",
-                "field_value" : "X",
-                "field_required" : false
             }
         }
     }
