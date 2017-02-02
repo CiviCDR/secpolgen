@@ -1,7 +1,7 @@
 'use strict';
 
 describe('Directive: fieldDirective', function () {
-  beforeEach(module('angularjsFormBuilderApp'));
+  beforeEach(module('secPolGen'));
 
   var element;
 

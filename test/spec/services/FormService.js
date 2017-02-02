@@ -3,7 +3,7 @@
 describe('Service: FormService', function () {
 
   // load the service's module
-  beforeEach(module('angularjsFormBuilderApp'));
+  beforeEach(module('secPolGen'));
 
   // instantiate service
   var FormService;

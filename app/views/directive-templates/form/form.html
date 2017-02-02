@@ -6,17 +6,22 @@
         <div class="span4">{{ form.form_id }}</div>
     </div>
     <form name="myForm" id="myForm">
-        <div ng-repeat="field in form.form_fields">
-            <field-directive field="field">
+      <accordion close-others="accordion.oneAtATime">TEST
+          <accordion-group heading="{{field.field_title}}" ng-repeat="field in form.form_fields">
+              <div class="accordion-edit">
+                <field-directive field="field">
 
-            </field-directive>
-        </div>
+                </field-directive>
+
+              </div>
+          </accordion-group>
+      </accordion>
     </form>
 
 
     <div class="form-actions">
         <p class="text-center">
-            <button class="btn btn-success right" type="button" ng-disabled="!myForm.$valid" ng-click="submit()"><i class="icon-edit icon-white"></i> Submit Form</button>
+            <button class="btn btn-success right" type="button" ng-disabled="!myForm.$valid" ng-click="submit()"><i class="icon-edit icon-white"></i> Create form</button>
             <button class="btn btn-danger right" type="button" ng-click="cancel()"><i class="icon-remove icon-white"></i> Cancel</button>
         </p>
     </div>

@@ -3,7 +3,7 @@
 describe('Controller: ViewCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('angularjsFormBuilderApp'));
+  beforeEach(module('secPolGen'));
 
   var ViewCtrl,
     scope;

@@ -3,7 +3,7 @@
 describe('Controller: CreateCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('angularjsFormBuilderApp'));
+  beforeEach(module('secPolGen'));
 
   var CreateCtrl,
     scope;
