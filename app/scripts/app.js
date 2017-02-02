@@ -9,18 +9,16 @@ angularApp.config(function ($routeProvider) {
             templateUrl: 'views/main.html',
             controller: 'MainCtrl'
         })
-        .when('/forms/create', {
-            templateUrl: 'views/create.html',
-            controller: 'CreateCtrl'
-        })
-        .when('/forms/:id/view', {
+        .when('/forms/:id/create', {
             templateUrl: 'views/view.html',
             controller: 'ViewCtrl'
         })
+        // .when('/forms/:id/view', {
+        //     templateUrl: 'views/view.html',
+        //     controller: 'ViewCtrl'
+        // })
         .otherwise({
             redirectTo: '/'
         });
 
 }).run(['$rootScope',  function() {}]);
-
-
