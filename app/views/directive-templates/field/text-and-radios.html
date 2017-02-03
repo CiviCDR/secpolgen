@@ -1,0 +1,21 @@
+<div class="field row">
+    <div class="span2">
+      <h4>{{field.field_heading}}</h4>
+
+      <div ng-repeat="option in field.field_options" class="row-fluid">
+          <label>
+              <input type="radio" value="option.option_value" ng-model="field.field_value"  ng-required="field.field_required"/>
+              &nbsp;<span ng-bind="option.option_title"></span>
+          </label>
+      </div>
+    </div>
+    <div class="span6">
+      <div ng-repeat="text in field.content" class="row-fluid policyContent">
+        <p>{{text.content_text}}</p>
+      </div>
+    </div>
+    <!-- <div class="span4">
+        <input type="text" ng-model="field.field_value" value="{{field.field_value}}" ng-required="field.field_required">
+        <span class="required-error" ng-show="field.field_required && !field.field_value">* required</span>
+    </div> -->
+</div>

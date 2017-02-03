@@ -7,20 +7,14 @@ angularApp.directive('fieldDirective', function ($http, $compile) {
             var templateUrl = '';
 
             switch(type) {
-                case 'purpose':
-                    templateUrl = './views/directive-templates/field/purpose.html';
+                case 'text':
+                    templateUrl = './views/directive-templates/field/text-only.html';
                     break;
-                case 'relevanceStaff':
-                    templateUrl = './views/directive-templates/field/staffrelevance.html';
+                case 'radios':
+                    templateUrl = './views/directive-templates/field/text-and-radios.html';
                     break;
-                case 'relevanceSystems':
-                    templateUrl = './views/directive-templates/field/systemrelevance.html';
-                    break;
-                case 'maintenance':
-                    templateUrl = './views/directive-templates/field/maintenance.html';
-                    break;
-                case 'policyupdates':
-                    templateUrl = './views/directive-templates/field/policyupdates.html';
+                case 'inputs':
+                    templateUrl = './views/directive-templates/field/text-and-inputs.html';
                     break;
             }
             return templateUrl;

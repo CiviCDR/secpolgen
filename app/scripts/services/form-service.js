@@ -7,23 +7,15 @@ angularApp.service('FormService', function FormService($http) {
     return {
         fields:[
             {
-                name : 'purpose',
+                name : 'text',
                 value : ''
             },
             {
-                name : 'relevanceStaff',
+                name : 'radios',
                 value : ''
             },
             {
-                name : 'relevanceSystems',
-                value : ''
-            },
-            {
-                name : 'maintenance',
-                value : ''
-            },
-            {
-                name : 'policyupdates',
+                name : 'inputs',
                 value : ''
             }
         ],

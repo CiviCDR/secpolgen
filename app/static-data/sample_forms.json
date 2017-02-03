@@ -7,16 +7,32 @@
             "1" : {
                 "field_id" : 1,
                 "field_title" : "Purpose",
-                "field_type" : "purpose",
+                "field_type" : "text",
                 "field_value" : "",
-                "field_required" : false
+                "field_required" : false,
+                "field_heading": "The purpose",
+                "content" : [
+                  {
+                    "content_text":"This document outlines [ORGANISATION]’s Security Policy and Strategy and it is meant to ensure the Digital and Physical security of [ORGANISATION] and its members."
+                  },
+                  {
+                    "content_text":"Our intention for [ORGANISATION]’s Security Policy and Strategy is not to impose restrictions that are contrary to our established culture of openness, trust and integrity. We are committed to protecting [ORGANISATION]’s employees, partners and the company."
+                  },
+                  {
+                    "content_text":"Effective security is a team effort involving the participation and support of every employee and affiliate who deals with information and/or information systems. It is the responsibility of every individual to know these guidelines, and to conduct their activities accordingly."
+                  },
+                  {
+                    "content_text":"In short, the primary purpose of this policy is: to preserve [ORGANISATION]’s security, i.e. the preservation of confidentiality, integrity and availability of [ORGANISATION]’s information assets, to ensure that [ORGANISATION] complies with contractual and legal requirements, and to prevent damage to [ORGANISATION]’s reputation."
+                  }
+                ]
             },
             "2" : {
                 "field_id" : 2,
                 "field_title" : "Staff relevance",
-                "field_type" : "relevanceStaff",
+                "field_type" : "radios",
                 "field_value" : "",
                 "field_required" : false,
+                "field_heading" : "Does this apply to all staff?",
                 "field_options" : [
                     {
                         "option_id" : 1,
@@ -27,15 +43,24 @@
                         "option_id" : 2,
                         "option_title" : "No",
                         "option_value" : 2
+                    }
+                ],
+                "content" : [
+                    {
+                        "content_text" : "The policy applies to all staff, whether directly or indirectly employed or otherwise under the control of [ORGANISATION]."
+                    },
+                    {
+                        "content_text" : "All employees, contractors, consultants, temporary, and other workers are responsible for exercising good judgment regarding appropriate use of information, electronic devices, and network resources in accordance with policies and standards, and local laws and regulation."
                     }
                 ]
             },
             "3" : {
                 "field_id" : 3,
                 "field_title" : "Systems relevance",
-                "field_type" : "relevanceSystems",
+                "field_type" : "radios",
                 "field_value" : "",
                 "field_required" : false,
+                "field_heading":"Does this apply to all systems?",
                 "field_options" : [
                     {
                         "option_id" : 1,
@@ -47,21 +72,39 @@
                         "option_title" : "No",
                         "option_value" : 2
                     }
+                ],
+                "content" : [
+                    {
+                        "content_text" : "This policy applies to the use of information, electronic and computing devices, and network resources to conduct business or interact with internal networks and business systems, whether owned or leased by [ORGANISATION], or a third party."
+                    },
+                    {
+                        "content_text" : "You may access, use or share [ORGANISATION] proprietary information only to the extent it is authorized and necessary to fulfill your assigned job duties."
+                    }
                 ]
             },
             "4" : {
                 "field_id" : 4,
                 "field_title" : "Maintenance overview",
-                "field_type" : "maintenance",
+                "field_type" : "text",
                 "field_value" : "2",
-                "field_required" : false
+                "field_required" : false,
+                "field_heading" : "Maintenance overview",
+                "content" : [
+                    {
+                        "content_text" : "[ORGANISATION]’s Security Policy and Strategy sets out to involve everyone to ensure it meets the specific needs and concerns of each individual, while incorporating necessary steps for the security of [ORGANISATION] as a whole, including its platforms and social media accounts and digital identity."
+                    },
+                    {
+                        "content_text" : "As such, this Security Policy and Strategy is being shaped through everyone’s participation and on an ongoing basis."
+                    }
+                ]
             },
             "5" : {
                 "field_id" : 5,
                 "field_title" : "Policy updates",
-                "field_type" : "policyupdates",
+                "field_type" : "radios",
                 "field_value" : "",
                 "field_required" : false,
+                "field_heading" : "How often will this be reviewed?",
                 "field_options" : [
                     {
                         "option_id" : 1,
@@ -77,6 +120,39 @@
                         "option_id" : 3,
                         "option_title" : "Monthly",
                         "option_value" : 3
+                    }
+                ],
+                "content" : [
+                    {
+                        "content_text" : "This policy will be reviewed [YEARLY | QUARTERLY | MONTHLY] and in response to any changes affecting the basis of the original risk assessment for example: significant security incident, new vulnerabilities and significant changes to the organisation or technical infrastructure."
+                    },
+                    {
+                        "content_text" : "Changes to this policy will be communicated to all staff."
+                    }
+                ]
+            },
+            "6" : {
+                "field_id" : 6,
+                "field_title" : "Responsibility",
+                "field_type" : "inputs",
+                "field_value" : "",
+                "field_required" : false,
+                "field_heading" : "Who is responsible for this policy?",
+                "field_options" : [
+                    {
+                        "option_id" : 1,
+                        "option_title" : "Main contact name",
+                        "option_value" : 1
+                    },
+                    {
+                        "option_id" : 2,
+                        "option_title" : "Second contact name",
+                        "option_value" : 2
+                    }
+                ],
+                "content" : [
+                    {
+                        "content_text":"If you have any questions or concerns, [PERSON] and [PERSON] are always available to help you with matters pertaining to security. So plan ahead and ensure your security needs are addressed."
                     }
                 ]
             }
