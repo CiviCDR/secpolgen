@@ -6,33 +6,45 @@
         "form_fields" : {
             "1" : {
                 "field_id" : 1,
-                "field_title" : "Intro",
-                "field_type" : "intro",
+                "field_title" : "Purpose",
+                "field_type" : "purpose",
                 "field_value" : "",
                 "field_required" : true
             },
             "2" : {
                 "field_id" : 2,
-                "field_title" : "Context",
-                "field_type" : "context",
-                "field_value" : "",
-                "field_required" : true
+                "field_title" : "Relevance - staff",
+                "field_type" : "relevanceStaff",
+                "field_value" : "1",
+                "field_required" : true,
+                "field_options" : [
+                    {
+                        "option_id" : 1,
+                        "option_title" : "Yes",
+                        "option_value" : 1
+                    },
+                    {
+                        "option_id" : 2,
+                        "option_title" : "No",
+                        "option_value" : 2
+                    }
+                ]
             },
             "3" : {
                 "field_id" : 3,
-                "field_title" : "Gender",
-                "field_type" : "radio",
+                "field_title" : "Relevance - systems",
+                "field_type" : "email",
                 "field_value" : "2",
                 "field_required" : true,
                 "field_options" : [
                     {
                         "option_id" : 1,
-                        "option_title" : "Male",
+                        "option_title" : "Yes",
                         "option_value" : 1
                     },
                     {
                         "option_id" : 2,
-                        "option_title" : "Female",
+                        "option_title" : "No",
                         "option_value" : 2
                     }
                 ]

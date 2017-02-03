@@ -7,11 +7,11 @@ angularApp.directive('fieldDirective', function ($http, $compile) {
             var templateUrl = '';
 
             switch(type) {
-                case 'intro':
-                    templateUrl = './views/directive-templates/field/intro.html';
+                case 'purpose':
+                    templateUrl = './views/directive-templates/field/purpose.html';
                     break;
-                case 'context':
-                    templateUrl = './views/directive-templates/field/context.html';
+                case 'relevanceStaff':
+                    templateUrl = './views/directive-templates/field/relevance-staff.html';
                     break;
                 case 'email':
                     templateUrl = './views/directive-templates/field/email.html';
