@@ -11,31 +11,10 @@ angularApp.directive('fieldDirective', function ($http, $compile) {
                     templateUrl = './views/directive-templates/field/purpose.html';
                     break;
                 case 'relevanceStaff':
-                    templateUrl = './views/directive-templates/field/relevance-staff.html';
+                    templateUrl = './views/directive-templates/field/staffrelevance.html';
                     break;
-                case 'email':
-                    templateUrl = './views/directive-templates/field/email.html';
-                    break;
-                case 'textarea':
-                    templateUrl = './views/directive-templates/field/textarea.html';
-                    break;
-                case 'checkbox':
-                    templateUrl = './views/directive-templates/field/checkbox.html';
-                    break;
-                case 'date':
-                    templateUrl = './views/directive-templates/field/date.html';
-                    break;
-                case 'dropdown':
-                    templateUrl = './views/directive-templates/field/dropdown.html';
-                    break;
-                case 'hidden':
-                    templateUrl = './views/directive-templates/field/hidden.html';
-                    break;
-                case 'password':
-                    templateUrl = './views/directive-templates/field/password.html';
-                    break;
-                case 'radio':
-                    templateUrl = './views/directive-templates/field/radio.html';
+                case 'relevanceSystems':
+                    templateUrl = './views/directive-templates/field/systemrelevance.html';
                     break;
             }
             return templateUrl;
