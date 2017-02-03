@@ -1,6 +1,6 @@
 <div class="field row">
     <div class="span2">
-      <h4>Does this apply to all systems?</h4>
+      <h4>Does this apply to all staff?</h4>
       <div ng-repeat="option in field.field_options" class="row-fluid">
           <label>
               <input type="radio" value="{{option.option_value}}" ng-model="field.field_value"  ng-required="field.field_required"/>
@@ -9,8 +9,8 @@
       </div>
     </div>
     <div class="span6 policyContent">
-      <p>This policy applies to the use of information, electronic and computing devices, and network resources to conduct business or interact with internal networks and business systems, whether owned or leased by [ORGANISATION], or a third party.</p>
-      <p>You may access, use or share [ORGANISATION] proprietary information only to the extent it is authorized and necessary to fulfill your assigned job duties.</p>
+      <p>This policy will be reviewed [YEARLY | QUARTERLY | MONTHLY] and in response to any changes affecting the basis of the original risk assessment for example: significant security incident, new vulnerabilities and significant changes to the organisation or technical infrastructure.</p>
+      <p>Changes to this policy will be communicated to all staff.</p>
     </div>
     <!-- <div class="span4">
         <input type="text" ng-model="field.field_value" value="{{field.field_value}}" ng-required="field.field_required">

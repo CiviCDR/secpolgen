@@ -16,6 +16,12 @@ angularApp.directive('fieldDirective', function ($http, $compile) {
                 case 'relevanceSystems':
                     templateUrl = './views/directive-templates/field/systemrelevance.html';
                     break;
+                case 'maintenance':
+                    templateUrl = './views/directive-templates/field/maintenance.html';
+                    break;
+                case 'policyupdates':
+                    templateUrl = './views/directive-templates/field/policyupdates.html';
+                    break;
             }
             return templateUrl;
         }

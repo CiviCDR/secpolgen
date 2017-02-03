@@ -8,15 +8,23 @@ angularApp.service('FormService', function FormService($http) {
         fields:[
             {
                 name : 'purpose',
-                value : 'Textfield'
+                value : ''
             },
             {
                 name : 'relevanceStaff',
-                value : 'E-mail'
+                value : ''
             },
             {
                 name : 'relevanceSystems',
-                value : 'Password'
+                value : ''
+            },
+            {
+                name : 'maintenance',
+                value : ''
+            },
+            {
+                name : 'policyupdates',
+                value : ''
             }
         ],
         form:function (id) {

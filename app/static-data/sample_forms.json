@@ -13,9 +13,9 @@
             },
             "2" : {
                 "field_id" : 2,
-                "field_title" : "Relevance - staff",
+                "field_title" : "Staff relevance",
                 "field_type" : "relevanceStaff",
-                "field_value" : "1",
+                "field_value" : "",
                 "field_required" : false,
                 "field_options" : [
                     {
@@ -32,9 +32,9 @@
             },
             "3" : {
                 "field_id" : 3,
-                "field_title" : "Relevance - systems",
+                "field_title" : "Systems relevance",
                 "field_type" : "relevanceSystems",
-                "field_value" : "2",
+                "field_value" : "",
                 "field_required" : false,
                 "field_options" : [
                     {
@@ -46,6 +46,37 @@
                         "option_id" : 2,
                         "option_title" : "No",
                         "option_value" : 2
+                    }
+                ]
+            },
+            "4" : {
+                "field_id" : 4,
+                "field_title" : "Maintenance overview",
+                "field_type" : "maintenance",
+                "field_value" : "2",
+                "field_required" : false
+            },
+            "5" : {
+                "field_id" : 5,
+                "field_title" : "Policy updates",
+                "field_type" : "policyupdates",
+                "field_value" : "",
+                "field_required" : false,
+                "field_options" : [
+                    {
+                        "option_id" : 1,
+                        "option_title" : "Yearly",
+                        "option_value" : 1
+                    },
+                    {
+                        "option_id" : 2,
+                        "option_title" : "Quarterly",
+                        "option_value" : 2
+                    },
+                    {
+                        "option_id" : 3,
+                        "option_title" : "Monthly",
+                        "option_value" : 3
                     }
                 ]
             }
