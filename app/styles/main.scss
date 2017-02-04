@@ -84,3 +84,8 @@ hr {
   line-height: 20px;
   font-style: italic;
 }
+
+.span2 input[type="radio"], .span2 span, label {
+  vertical-align: middle;
+  margin:0;
+}
