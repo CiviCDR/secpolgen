@@ -3,5 +3,5 @@
 <a ng-show="showJson" ng-click="showJson = false">Hide form json object</a><br><br>
 <div ng-show="showJson">
     <h4>Form object content:</h4>
-    <pre>{{ form | json }}</pre>
+    <pre>{{ form | json | replace }}</pre>
 </div>

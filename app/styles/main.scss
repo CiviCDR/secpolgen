@@ -94,3 +94,26 @@ hr {
   width:100%;
   height:750px;
 }
+
+.masthead img.pull-left {
+  height:60px;
+  margin-right: 10px;
+}
+
+$red-hex : #F06562;
+$red-rgb : rgb(240,101,98);
+
+// overrides
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+  background-color: $red-hex;
+}
+
+.container-fluid {
+  background-color: $red-hex;
+  color:#fff;
+}
+
+hr {
+  border-color:#fafafa;
+}

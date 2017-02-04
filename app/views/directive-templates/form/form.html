@@ -4,7 +4,7 @@
     <form name="myForm" id="myForm">
       <hr>
       Organisation name:
-      <input type="text" ng-model="form.org_name"></input>
+      <input type="text" ng-change="updateText()" ng-model="form.org_name"></input>
       <hr>
       <accordion close-others="accordion.oneAtATime">
           <accordion-group heading="{{field.field_title}}" ng-repeat="field in form.form_fields" is-open="isopen" ng-click="isopen=!isopen">
@@ -31,7 +31,7 @@
     <div class="hideDuringCreation">
       <h2>Security Policy for <span ng-bind="form.org_name">{{ form.org_name }}</span></h2>
         <div id="policyArea"><div ng-repeat="field in form.form_fields"><h4>{{ field.field_title }}</h4>
-<div ng-repeat="text in field.content"><p>{{text.content_text}}</p></div>
+<div ng-repeat="text in field.content" ng-bind-html="text.content_text | replace"><p>{{text.content_text}}</p></div>
 
             </div>
         </div>

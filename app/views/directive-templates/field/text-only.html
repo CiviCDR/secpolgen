@@ -5,8 +5,8 @@
       <h4>{{field.field_heading}}</h4>
     </div>
     <div class="span6">
-      <div ng-repeat="text in field.content" class="row-fluid policyContent">
-        <p>{{text.content_text}}</p>
+      <div ng-repeat="text in field.content" ng-bind-html="text.content_text" class="row-fluid policyContent">
+        <p>{{text.content_text | replace}}</p>
       </div>
 
     </div>

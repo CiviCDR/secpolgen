@@ -1,6 +1,11 @@
 'use strict';
 
-var angularApp = angular.module('secPolGen', ['ui.bootstrap', '$strap.directives', "xeditable"]);
+var angularApp = angular.module('secPolGen', ['ui.bootstrap', '$strap.directives']).filter('replace', function(){
+      return function(text) {
+        console.log(text);
+           return text.replace(/\[ORGANISATION\]/g, '<span ng-bind="form.org_name">{{ form.org_name }}</span>');
+          };
+    });;
 
 angularApp.config(function ($routeProvider) {
     // .filter('orgName', function() {

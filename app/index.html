@@ -27,14 +27,16 @@
 
     <!-- Add your site or application content here -->
 
-        <div class="container-narrow">
-            <div class="masthead" ng-controller="HeaderCtrl" >
-                <ul class="nav nav-pills pull-right">
-                    <li ng-class="{active: ($location.path() == '/') }"><a href="#/">Home</a></li>
-                    <li ng-class="{active: ($location.path() == '/forms/new/create') }"><a href="#/forms/new/create">Create policy</a></li>
-                    <!-- <li ng-class="{active: ($location.path() == '/forms/1/view') }"><a href="#/forms/1/view">View example</a></li> -->
-                </ul>
-                <h3 class="muted">Security Policy Generator</h3>
+          <div class="container-narrow">
+              <div class="masthead" ng-controller="HeaderCtrl" >
+                <img src="img/logo.png" class="pull-left" />
+                  <ul class="nav nav-pills pull-right">
+                      <li ng-class="{active: ($location.path() == '/') }"><a href="#/">Home</a></li>
+                      <li ng-class="{active: ($location.path() == '/forms/new/create') }"><a href="#/forms/new/create">Create policy</a></li>
+                      <!-- <li ng-class="{active: ($location.path() == '/forms/1/view') }"><a href="#/forms/1/view">View example</a></li> -->
+                  </ul>
+                  <h3 class="pull-left">Security Policy Generator</h3>
+              </div>
             </div>
 
             <hr>
@@ -42,10 +44,12 @@
             <div class="content" ng-view=""></div>
 
             <hr>
+            <div class="container-narrow">
+
             <div class="footer">
                 <p>CiviCDR - Security Policy Generator</p>
             </div>
-        </div>
+          </div>
 
         <!-- build:js scripts/plugins.js -->
         <script src="bower_components/jquery/jquery.js"></script>
