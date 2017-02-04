@@ -4,7 +4,7 @@
         "form_name" : "Create Security Policy",
         "org_name" : "",
         "form_fields" : {
-            "1" : {
+            "01" : {
                 "field_id" : 1,
                 "field_title" : "Purpose",
                 "field_type" : "text",
@@ -13,7 +13,7 @@
                 "field_heading": "The purpose",
                 "content" : [
                   {
-                    "content_text":"This document outlines [ORGANISATION]’s Security Policy and Strategy and it is meant to ensure the Digital and Physical security of [ORGANISATION] and its members."
+                    "content_text":"This document outlines <span [ORGANISATION]’s Security Policy and Strategy and it is meant to ensure the Digital and Physical security of [ORGANISATION] and its members."
                   },
                   {
                     "content_text":"Our intention for [ORGANISATION]’s Security Policy and Strategy is not to impose restrictions that are contrary to our established culture of openness, trust and integrity. We are committed to protecting [ORGANISATION]’s employees, partners and the company."
@@ -26,7 +26,7 @@
                   }
                 ]
             },
-            "2" : {
+            "02" : {
                 "field_id" : 2,
                 "field_title" : "Staff relevance",
                 "field_type" : "radios",
@@ -54,7 +54,7 @@
                     }
                 ]
             },
-            "3" : {
+            "03" : {
                 "field_id" : 3,
                 "field_title" : "Systems relevance",
                 "field_type" : "radios",
@@ -82,7 +82,7 @@
                     }
                 ]
             },
-            "4" : {
+            "04" : {
                 "field_id" : 4,
                 "field_title" : "Maintenance overview",
                 "field_type" : "text",
@@ -98,7 +98,7 @@
                     }
                 ]
             },
-            "5" : {
+            "05" : {
                 "field_id" : 5,
                 "field_title" : "Policy updates",
                 "field_type" : "radios",
@@ -131,7 +131,7 @@
                     }
                 ]
             },
-            "6" : {
+            "06" : {
                 "field_id" : 6,
                 "field_title" : "Responsibility",
                 "field_type" : "inputs",
@@ -153,6 +153,143 @@
                 "content" : [
                     {
                         "content_text":"If you have any questions or concerns, [PERSON] and [PERSON] are always available to help you with matters pertaining to security. So plan ahead and ensure your security needs are addressed."
+                    }
+                ]
+            },
+            "07" : {
+                "field_id" : 7,
+                "field_title" : "Enforcement",
+                "field_type" : "text",
+                "field_value" : "",
+                "field_required" : false,
+                "field_heading": "Enforcing the policy",
+                "content" : [
+                  {
+                    "content_text":"[ORGANISATION] reserves the right to audit networks and systems on a periodic basis to ensure compliance with this policy."
+                  },
+                  {
+                    "content_text":"Breach of this policy, including failure to report serious violations of this policy may result in disciplinary action. A violation of this policy may also be a violation of the law and subject the staff to investigation and criminal or civil prosecution."
+                  }
+                ]
+            },
+            "08" : {
+                "field_id" :8,
+                "field_title" : "Reporting process",
+                "field_type" : "text",
+                "field_value" : "",
+                "field_required" : false,
+                "field_heading": "Reporting security breaches",
+                "content" : [
+                  {
+                    "content_text":"If you suspect that your computer has been infected with a malware you should turn your computer off and report it to [PERSON] immediately. Other security incidents such as suspected hacking, policy breaches, etc. must also be reported to [PERSON] as soon as possible."
+                  }
+                ]
+            },
+            "09" : {
+                "field_id" : 9,
+                "field_title" : "Staff aliases",
+                "field_type" : "radios",
+                "field_value" : "",
+                "field_required" : false,
+                "field_heading" : "Do your staff use aliases?",
+                "field_options" : [
+                    {
+                        "option_id" : 1,
+                        "option_title" : "Yes",
+                        "option_value" : 1
+                    },
+                    {
+                        "option_id" : 2,
+                        "option_title" : "No",
+                        "option_value" : 2
+                    }
+                ],
+                "content" : [
+                    {
+                        "content_text" : "When you join [ORGANISATION], as a contractor or full time employee, you have the right to choose an alias name as your work identity. In this process of assuming an alias for our work, we will assist you in choosing your alias and will explain the necessary procedures and set up accounts under your alias which you will use for all work related communications and account registrations, etc."
+                    },
+                    {
+                        "content_text" : "Since every staff member will have their individual concerns and own contexts, each member will need to consider their own strategy plan to address their own situations. We will spend any amount of time with you need to discuss and help you with your concerns regarding your identity and activities with [ORGANISATION]"
+                    },
+                    {
+                        "content_text" : "Every member of the company that has alias has to be addressed with the alias inside and outside of [ORGANISATION] office space or events. For this reason it's best to introduce yourself with the alias once you start to work, so people know you only with your alias. Many of your colleagues work at [ORGANISATION] with assumed alias names and identities, therefore, refrain from asking personal questions about your colleagues, consultants or partner organizations’ personal lives."
+                    },
+                    {
+                        "content_text" : "We come to [ORGANISATION] under our aliases and these identities should remain intact, unless certain information is exempted (volunteered) by your colleague. If personal information is not volunteered by your colleague, then please refrain from asking personal questions from or about any other [ORGANISATION] member. Be cautious about putting your [ORGANISATION] colleague in front of other people in situations that requires them to reveal information about their personal life. Always remember that when one [ORGANISATION] team’s physical security is compromised, it has consequences for the entire team!"
+                    },
+                    {
+                        "content_text" : "Individuals at [ORGANISATION] work under aliases, and may have social media accounts under their real identities. You may come across their profiles through your social graph. It is against [ORGANISATION] policy to request a connection on any social media platform from the real identity of any individuals at [ORGANISATION] without their previous permission; obtained offline."
+                    }
+                ]
+            },
+            "010" : {
+                "field_id" :10,
+                "field_title" : "Physical threats",
+                "field_type" : "text",
+                "field_value" : "",
+                "field_required" : false,
+                "field_heading": "Physical threat introduction",
+                "content" : [
+                  {
+                    "content_text":"In this context, physical threat is any threat to your sensitive information that results from other people having direct physical access to your computer hardware, phone, tablet or any other system containing your information or from other physical risks, such as breakage, accidents or natural disasters."
+                  }
+                ]
+            },
+            "011" : {
+                "field_id" : 11,
+                "field_title" : "Office security",
+                "field_type" : "radios",
+                "field_value" : "",
+                "field_required" : false,
+                "field_heading" : "Do your staff have access to a shared office?",
+                "field_options" : [
+                    {
+                        "option_id" : 1,
+                        "option_title" : "Key",
+                        "option_value" : 1
+                    },
+                    {
+                        "option_id" : 2,
+                        "option_title" : "Fob",
+                        "option_value" : 2
+                    },
+                    {
+                        "option_id" : 3,
+                        "option_title" : "Code",
+                        "option_value" : 3
+                    }
+                ],
+                "content" : [
+                    {
+                        "content_text" : "You are assigned and given a [METHOD] to enter the office. Please make sure that your [KEY | FOB] have no mention of [ORGANISATION] or our physical address and/or that your code is not written down. [FOB SELECTION ONLY] Access times may vary for each employee and all activities on the fob system are logged on a computer. [/FOB SELECTION ONLY] "
+                    },
+                    {
+                        "content_text" : "Changes to this policy will be communicated to all staff."
+                    }
+                ]
+            },
+            "012" : {
+                "field_id" : 12,
+                "field_title" : "Security alarms",
+                "field_type" : "radios",
+                "field_value" : "",
+                "field_required" : false,
+                "field_heading" : "Can your staff enable/disable the alarm?",
+                "field_options" : [
+                    {
+                        "option_id" : 1,
+                        "option_title" : "Yes",
+                        "option_value" : 1
+                    },
+                    {
+                        "option_id" : 2,
+                        "option_title" : "No",
+                        "option_value" : 2
+                    }
+                ],
+                "content" : [
+                    {
+                        "content_text" : "The security code to set and disable the alarm will be given to you at the same time as the [FOB | KEY | CODE]. If you don’t know the code or have forgotten it, please make sure to ask a colleague or [PERSON] immediately."
                     }
                 ]
             }
