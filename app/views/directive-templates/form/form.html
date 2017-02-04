@@ -11,7 +11,7 @@
               <div class="accordion-edit">
                 <field-directive field="field">
                 </field-directive>
-                <button class="btn btn-primary right" type="button" ng-click="nextPanel()">OK</button>
+                <button class="btn btn-primary right" type="button" ng-click="nextPanel()">Next</button>
               </div>
           </accordion-group>
       </accordion>
@@ -30,13 +30,10 @@
   <div id="submittedPolicy">
     <div class="hideDuringCreation">
       <h2>Security Policy for <span ng-bind="form.org_name">{{ form.org_name }}</span></h2>
-        <div id="policyArea">
-          <div ng-repeat="field in form.form_fields">
-            <h4>{{ field.field_title }}</h4>
-            <div ng-repeat="text in field.content">
-              <p>{{text.content_text}}</p>
+        <div id="policyArea"><div ng-repeat="field in form.form_fields"><h4>{{ field.field_title }}</h4>
+<div ng-repeat="text in field.content"><p>{{text.content_text}}</p></div>
+
             </div>
-          </div>
         </div>
     </div>
   </div>

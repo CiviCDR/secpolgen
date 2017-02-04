@@ -34,9 +34,9 @@ function createPolicy() {
   // var editablePolicy = '<textarea>'+policy+'<textarea>';
   // var newContainer = container.appendChild(editablePolicy);
 
-  // var str = policy;
-  // var newstr = str.replace(/the/i, 'Christmas');
-  // console.log(newstr);
+  var str = org_html;
+  var newstr = str.replace(/the/i, 'Christmas');
+  console.log(newstr);
 
   // var toReplace = '[ORGANISATION]';
   // var replaceWith = 'orgName';
