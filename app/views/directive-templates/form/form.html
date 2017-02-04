@@ -30,12 +30,14 @@
   <div id="submittedPolicy">
     <div class="hideDuringCreation">
       <h2>Security Policy for <span ng-bind="form.org_name">{{ form.org_name }}</span></h2>
-      <div ng-repeat="field in form.form_fields">
-          <h4>{{ field.field_title }}</h4>
-          <div ng-repeat="text in field.content">
-            <p>{{text.content_text}}</p>
+        <div id="policyArea">
+          <div ng-repeat="field in form.form_fields">
+            <h4>{{ field.field_title }}</h4>
+            <div ng-repeat="text in field.content">
+              <p>{{text.content_text}}</p>
+            </div>
           </div>
-      </div>
+        </div>
     </div>
   </div>
   <!-- <button class="btn btn-success right" type="button" id="copyButton">Copy to clipboard</button> -->

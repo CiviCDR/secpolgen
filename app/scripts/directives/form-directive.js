@@ -7,7 +7,7 @@ angularApp.directive('formDirective', function () {
                 alert('Building your policy...');
                 $scope.form.submitted = true;
                 var org = $scope.form.org_name;
-                createPolicy(org);
+                createPolicy();
             }
 
             $scope.cancel = function(){
@@ -22,17 +22,21 @@ angularApp.directive('formDirective', function () {
     };
   });
 
-function createPolicy(orgName) {
-  var policy = document.getElementById('submittedPolicy');
-  policy = policy.innerText;
-  var container = document.getElementById('policyContainer');
+function createPolicy() {
+  // var policy = document.getElementById('submittedPolicy');
+  // policy = policy.innerText;
+
+  var org_html = document.getElementById("policyArea").innerText;
+  var new_html = "<textarea id='copyablePolicy'>" + org_html + "</textarea>";
+  document.getElementById("policyArea").innerHTML = new_html;
+
 
   // var editablePolicy = '<textarea>'+policy+'<textarea>';
   // var newContainer = container.appendChild(editablePolicy);
 
-  var str = policy;
-  var newstr = str.replace(/the/i, 'Christmas');
-  console.log(newstr);
+  // var str = policy;
+  // var newstr = str.replace(/the/i, 'Christmas');
+  // console.log(newstr);
 
   // var toReplace = '[ORGANISATION]';
   // var replaceWith = 'orgName';
