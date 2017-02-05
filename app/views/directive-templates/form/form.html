@@ -3,15 +3,15 @@
 <div ng-show="!form.submitted">
     <form name="myForm" id="myForm">
       <hr>
-      Organisation name:
+      <h3>Organisation name:</h3>
       <input type="text" ng-change="updateText()" ng-model="form.org_name"></input>
       <hr>
       <accordion close-others="accordion.oneAtATime">
           <accordion-group heading="{{field.field_title}}" ng-repeat="field in form.form_fields" is-open="isopen" ng-click="isopen=!isopen">
               <div class="accordion-edit">
-                <field-directive field="field" class="lightRed">
+                <field-directive field="field">
                 </field-directive>
-                <button class="btn btn-primary right" type="button" ng-click="nextPanel()">Next</button>
+                <button class="btn nextBtn right" type="button" ng-click="nextPanel()">Next</button>
               </div>
           </accordion-group>
       </accordion>
@@ -20,7 +20,7 @@
 
     <div class="form-actions">
         <p class="text-center">
-            <button class="btn btn-success right" type="button" ng-disabled="!myForm.$valid" ng-click="submit()">Create policy</button>
+            <button class="btn submitForm right" type="button" ng-disabled="!myForm.$valid" ng-click="submit()">Create policy</button>
         </p>
     </div>
 </div>

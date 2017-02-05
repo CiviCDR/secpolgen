@@ -124,3 +124,26 @@ hr {
   background-color:white;
   color:black;
 }
+
+.nextBtn, .submitForm {
+  background-color: $red-hex;
+  color:white;
+  background-image: none;
+}
+#footerLogo {
+  height:40px;
+}
+footer p {
+  line-height: 40px;
+  float:left;
+  margin-left: 10px;
+  font-weight: bold;
+}
+#myForm h3 {
+  display:inline-block;
+  margin-right: 10px;
+}
+
+a {
+  color:$red-hex;
+}
