@@ -7,3 +7,7 @@ Security policy generator application built with AngularJS.
 * AngularJS
 * Bootstrap
 * Grunt
+* Node
+* Bower
+
+Enter `grunt server` to run locally
