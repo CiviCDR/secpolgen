@@ -55,7 +55,7 @@ module.exports = function (grunt) {
     },
     connect: {
       options: {
-        port: 9000,
+        port: 8080,
         // Change this to '0.0.0.0' to access the server from outside.
         hostname: 'localhost'
       },
@@ -108,15 +108,15 @@ module.exports = function (grunt) {
       },
       server: '.tmp'
     },
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc'
-      },
-      all: [
-        'Gruntfile.js',
-        '<%= yeoman.app %>/scripts/{,*/}*.js'
-      ]
-    },
+    // jshint: {
+    //   options: {
+    //     jshintrc: '.jshintrc'
+    //   },
+    //   all: [
+    //     'Gruntfile.js',
+    //     '<%= yeoman.app %>/scripts/{,*/}*.js'
+    //   ]
+    // },
     coffee: {
       dist: {
         files: [{
@@ -325,7 +325,7 @@ module.exports = function (grunt) {
     'clean:server',
     'concurrent:test',
     'connect:test',
-    'karma'
+    // 'karma'
   ]);
 
   grunt.registerTask('build', [
@@ -343,7 +343,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'jshint',
+    // 'jshint',
     'test',
     'build'
   ]);

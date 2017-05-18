@@ -40,6 +40,8 @@ function createPolicy() {
   var new_html = "<textarea id='copyablePolicy'>" + org_html + "</textarea>";
   document.getElementById("policyArea").innerHTML = new_html;
 
+  console.log(new_html);
+
 
   var str = document.getElementById('myForm').innerText;
   str = str.replace(/(\[ORGANISATION\])/g, 'Christmas');
