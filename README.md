@@ -10,4 +10,4 @@ Security policy generator application built with AngularJS.
 * Node
 * Bower
 
-Enter `Grunt server` in command line to run
+Enter `grunt server` to run locally
